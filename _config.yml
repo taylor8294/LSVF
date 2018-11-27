@@ -1,0 +1,6 @@
+name: Arcana
+description: Arcana template for Jekyll
+baseurl: ''
+sass:
+    sass_dir: _sass
+plugins: [github-pages]

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | relative_url }}" />	  
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="preload" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic" as="style" onload="this.rel='stylesheet'">
+		<link rel="preload" href="{{ '/assets/css/font-awesome.min.css' | relative_url }}" as="style" onload="this.rel='stylesheet'">
+		<link rel="preload" href="{{ '/assets/css/wmBox.css' | relative_url }}" as="style" onload="this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic">
+			<link rel="stylesheet" href="{{ '/assets/css/font-awesome.min.css' | relative_url }}">
+			<link rel="stylesheet" href="{{ '/assets/css/wmBox.css' | relative_url }}">
+		</noscript>
+		<script>
+			/*! loadCSS rel=preload polyfill v2.0.1. [c]2017 Filament Group, Inc. MIT License */
+			!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+		</script>
+		<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+		<!--[if lte IE 8]><script src="{{ site.baseurl }}/assets/css/ie/html5shiv.js"></script><![endif]-->
+		<script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
+		<script src="{{ '/assets/js/jquery.dropotron.min.js' | relative_url }}"></script>
+		<script src="{{ '/assets/js/jquery.wmBox.js' | relative_url }}"></script>
+		<!-- <script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/skel-layers.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/skel.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style-wide.css" />
+		</noscript> -->
+		<script src="{{ '/assets/js/init.js' | relative_url }}"></script>
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+	<!-- Menu Wrap -->
+		<div id="menu-wrapper">
+
+		<!-- Header -->
+			<div id="header">
+				<!-- Logo -->
+				<h1><a href="{{ '/index.html' | relative_url }}" id="logo">Vodafone <em> | LifeSight</em></a></h1>
+				
+				<!-- Main Nav -->
+				<nav id="nav">
+					{% include nav-list.html %}
+				</nav>
+			</div>

@@ -1,0 +1,126 @@
+@import 'vars';
+@import 'mixins';
+
+/*
+	Arcana by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* Basic */
+
+	body, input, select, textarea {
+		font-size: 13pt;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		margin-bottom: 0.5em;
+	}
+
+	header {
+		p {
+			margin-top: -0.75em;
+		}
+		
+		&.major {
+			text-align: center;
+			margin: 0 0 2em 0;
+			
+			h2 {
+				font-size: 1.75em;
+			}
+			
+			p {
+				top: -0.25em;
+				font-size: 1.25em;
+			}
+		}
+	}
+	
+	#skel-layers-wrapper {
+		padding-top: 44px;
+		overflow-x: hidden;
+	}
+
+/* Box */
+
+	.box {
+		&.highlight {
+			text-align: left;
+			position: relative;
+			padding-left: 7em;
+		
+			i {
+				position: absolute;
+				margin: 0;
+				left: 0;
+				top: 0.25em;
+			}
+		}
+
+		&.post {
+			.inner {
+				margin-left: calc(20% + 2em);
+			}
+
+			.image {
+				width: 20%;
+			}
+		}
+	}
+
+/* Header */
+
+	#header {
+		display: none;
+	}
+
+/* Banner */
+
+	#banner {
+		height: 20em;
+
+		header {
+			h2 {
+				display: block;
+			}
+			
+			.button {
+				margin: 1em 0 0 0;
+			}
+		}
+	}
+
+/* CTA */
+
+	#cta {
+		padding: 1.5em 0;
+
+		header {
+			h2 {
+				display: block;
+			}
+			
+			.button {
+				margin: 1em 0 0 0;
+			}
+		}
+	}
+
+/* Footer */
+
+	#footer {
+		text-align: center;
+
+		.container {
+			margin-bottom: 4em;
+		}
+	}
+
+/* Mobile Header */
+	#menu-wrapper {
+    	padding-top: 44px;
+	}
+	#title-bar, #nav-panel {
+		display: block;
+	}

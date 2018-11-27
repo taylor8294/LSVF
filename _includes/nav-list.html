@@ -1,0 +1,25 @@
+    <ul>
+        {% if site.data.navigation[0] %}
+            {% for item in site.data.navigation %}
+                <li {% if page.url == item.url %}class="current"{% endif %}>
+                    <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+                    {% if item.dropdown[0] %}
+                        <ul>
+                            {% for entry in item.dropdown %}
+                                <li {% if page.url == item.url %}class="current"{% endif %}>
+                                    <a href="{{ entry.url | relative_url }}">{{ entry.name }}</a>
+                                    {% if entry.dropdown[0] %}
+                                        <ul>
+                                            {% for subentry in entry.dropdown %}
+                                                <li {% if page.url == item.url %}class="current"{% endif %}><a href="{{ subentry.url | relative_url }}">{{ subentry.name }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        {% endif %}
+    </ul>
