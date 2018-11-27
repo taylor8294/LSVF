@@ -1,6 +1,8 @@
-name: Arcana
-description: Arcana template for Jekyll
-baseurl: ''
+title: LifeSight by Willis Towers Watson
+description: Proposition site for Vodafone
+url: 'http://127.0.0.1:4000/'
+permalink: pretty
+baseurl: '/LSVF'
 sass:
     sass_dir: _sass
 plugins: [github-pages]

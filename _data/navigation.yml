@@ -1,18 +1,18 @@
 - name: Home
   url: /
 - name: Blog
-  url: /blog.html
+  url: /blog/
 - name: About
-  url: /about.html
+  url: /about/
 - name: Sidebars
   dropdown:
   - name: Side
     dropdown:
     - name: Left
-      url: /left-sidebar.html
+      url: /left/
     - name: Right
-      url: /right-sidebar.html
+      url: /right/
   - name: Two
-    url: /two-sidebar.html
+    url: /two/
   - name: None
-    url: /no-sidebar.html
+    url: /none/
